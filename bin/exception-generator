@@ -26,6 +26,10 @@ if (false === $autoload) {
 
 unset($autoload, $file);
 
+if (empty(ini_get('date.timezone'))) {
+    ini_set('date.timezone', 'UTC');
+}
+
 use Burntromi\ExceptionGenerator\Cli\Console\Application;
 
 $console = new Application('Burntromi Exception-Generator', '1.0-dev');
