@@ -1,0 +1,16 @@
+<?= '<?php' ?>
+
+namespace <?= $namespace ?>\Exception;
+
+<?php if (isset($use)): ?>
+use <?= $use ?> as BaseExceptionInterface;
+
+<?php endif ?>
+/**
+ * Generated at <?= $created->format('r') ?> by <?= $user ?>
+
+ */
+interface ExceptionInterface<?php if (isset($use)): ?> extends BaseExceptionInterface<?php endif; ?>
+
+{
+}

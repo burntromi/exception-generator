@@ -1,0 +1,17 @@
+default:
+    suites:
+        default:
+            paths: [ %paths.base%/tests/features/ ]
+            contexts:
+                - Burntromi\ExceptionGenerator\IntegrationTest\FeatureContext
+                - Burntromi\ExceptionGenerator\IntegrationTest\CreateExceptionContext
+                - Burntromi\ExceptionGenerator\IntegrationTest\TemplateContext
+    testers:
+        strict: true
+    extensions:
+        Burntromi\ExceptionGenerator\IntegrationTest\Initializer\Extension:
+            options:
+                inputOptions:
+                    "--quiet": ""
+                    "--no-interaction": ""
+                    "-vv": ""
