@@ -9,6 +9,7 @@ http://ralphschindler.com/2010/09/15/exception-best-practices-in-php-5-3
 The manual creation of those classes is time-consuming and error-prone.
 To save time and reduce errors, this tool was made!
 
+[![Build Status](https://travis-ci.org/burntromi/exception-generator.svg?branch=master)](https://travis-ci.org/burntromi/exception-generator)
 
 ## Installation/Usage
 
