@@ -25,7 +25,7 @@ install:
 
 script:
   - composer exec phpunit -- --coverage-clover=build/logs/clover.xml
-  - composer exec behat -- -f progress
+  - composer exec behat -- --format=progress
 
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar
