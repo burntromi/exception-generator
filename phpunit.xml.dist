@@ -23,5 +23,6 @@
     <php>
         <ini name="date.timezone" value="UTC"/>
         <ini name="error_reporting" value="-1"/>
+        <ini name="log_errors" value="1"/>
     </php>
 </phpunit>
