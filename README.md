@@ -109,6 +109,6 @@ run Behat:
 ./vendor/bin/behat
 ```
 
-# License
+## License
 
 MIT see [LICENSE.md](LICENSE.md)
