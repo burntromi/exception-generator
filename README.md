@@ -46,7 +46,7 @@ Disables feature for searching and using parent exception classes.
 
 `--help (-h)`:
 
-Display help test and exit.
+Display help text and exit.
 
 ## How is the namespace determined?
 
