@@ -17,6 +17,14 @@ To save time and reduce errors, this tool was made!
 composer global require burntromi/exception-generator
 ```
 
+Make sure you have ~/.composer/vendor/bin/ in your path.
+
+```
+exception-generator [PATH]
+```
+
+Where `PATH` is your source code path where the exception classes should be generated.
+
 ## How is the namespace determined?
 
 The tool starts from the current dir. If there can be a PHP file found, it trys
@@ -41,14 +49,14 @@ The determined namespace will be shown after all and you are asked to verify it
 with "enter" or to correct it.
 
 
-## Using Paramters
+## Using Parameters
 
 `--overwrite (-o)`:
 
 Give permissions to overwrite all existing files, without asking for each file to
 be overwritten.
 
-`--template-path (-t) PATH`:
+`--template-path=PATH (-t PATH)`:
 
 Can be usesd to determine the PATH you want the application to look for templates
 for creating the exception classes/interface. If a template cannot be found in this
@@ -60,11 +68,15 @@ If this also fails, it will use given templates from the tool itself.
 
 Disables feature for searching and using parent exception classes.
 
+`--help (-h)`:
+
+Display help test and exit.
+
 ## The config file (.exception-generator.json)
 
 This should be located in `$HOME` and use the following pattern:
 
-```
+```json
 {
     "templatepath": {
         "global": "/home/user/exception-generator/global",
@@ -82,7 +94,7 @@ If this fails, it will check the entry in "global" for a template.
 Otherwise the tool will use given templates from itself.
 
 
-## tests
+## Tests
 
 run PHPUnit:
 
