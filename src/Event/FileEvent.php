@@ -7,8 +7,6 @@ use DirectoryIterator;
 
 class FileEvent extends Event
 {
-    static private $supportGetExtension = false;
-
     /**
      * Namespace.
      *
@@ -76,11 +74,6 @@ class FileEvent extends Event
         $this->basename  = $file->getBasename();
         $this->dirname   = $file->getPath();
         $this->isDir     = $file->isDir();
-
-        static::$supportGetExtension = method_exists(
-            'DirectoryIterator',
-            'getExtension'
-        );
     }
 
     /**
@@ -177,15 +170,10 @@ class FileEvent extends Event
      *
      * @param DirectoryIterator $file
      * @return string
-     * @todo Remove method when dropping support for PHP <=5.3.6
      */
     private function getFileExtension(DirectoryIterator $file)
     {
-        if (static::$supportGetExtension) {
-            return $file->getExtension();
-        }
-
-        return pathinfo($file->getFilename(), PATHINFO_EXTENSION);
+        return $file->getExtension();
     }
 
     /**

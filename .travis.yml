@@ -12,8 +12,10 @@ env:
     - PREFER_LOWEST=""
 
 php:
-  - 5.6
+  - 7.1
   - 7
+  - 5.6
+  - nightly
   - hhvm
 
 before_install:
