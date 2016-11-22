@@ -109,4 +109,4 @@ run Behat:
 
 # License
 
-MIT see (LICENSE.md)[LICENSE.md]
+MIT see [LICENSE.md](LICENSE.md)
