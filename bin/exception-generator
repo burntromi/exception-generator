@@ -32,5 +32,5 @@ if (empty(ini_get('date.timezone'))) {
 
 use Burntromi\ExceptionGenerator\Cli\Console\Application;
 
-$console = new Application('Burntromi Exception-Generator', '1.0-dev');
+$console = new Application('Burntromi Exception-Generator', '1.0.0');
 $console->run();
