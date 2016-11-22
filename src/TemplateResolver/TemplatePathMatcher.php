@@ -6,6 +6,8 @@ use Burntromi\ExceptionGenerator\Exception\RuntimeException;
 
 class TemplatePathMatcher
 {
+    const CONFIG_NAME = '.exception-generator.json';
+
     protected $currentDir;
     protected $configPath;
 
@@ -18,7 +20,7 @@ class TemplatePathMatcher
     public function __construct($currentDir, $configPath)
     {
         $this->currentDir = $currentDir;
-        $this->configPath = $configPath . '/.exception-generator.json';
+        $this->configPath = $configPath . '/' . self::CONFIG_NAME;
     }
 
     /**
