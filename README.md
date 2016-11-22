@@ -10,6 +10,8 @@ The manual creation of those classes is time-consuming and error-prone.
 To save time and reduce errors, this tool was made!
 
 [![Build Status](https://travis-ci.org/burntromi/exception-generator.svg?branch=master)](https://travis-ci.org/burntromi/exception-generator)
+[![Latest Stable Version](https://poser.pugx.org/burntromi/exception-generator/version)](https://packagist.org/packages/burntromi/exception-generator)
+[![License](https://poser.pugx.org/burntromi/exception-generator/license)](https://packagist.org/packages/burntromi/exception-generator)
 
 ## Installation/Usage
 
